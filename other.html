@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Duurzame Interieurs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Algemene body-stijlen */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/woonwinkel.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Header-stijlen */
+        header {
+            background-color: rgba(178, 172, 136, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Navigatiestijlen */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(178, 172, 136, 0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #3b7a3f;
+            border-radius: 5px;
+        }
+
+        /* Contact informatie in de rechterbovenhoek */
+        .contact-top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Container voor inhoud */
+        .container {
+            text-align: left;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .info-box h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c5f2d;
+        }
+
+        .info-box p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2c5f2d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #3b7a3f;
+        }
+
+        /* Footer-stijlen */
+        footer {
+            background-color: rgba(178, 172, 136, 0.8);
+            color: white;
+            padding: 20px 20px 10px 20px;
+            text-align: center;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        footer .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        footer .social-icons i {
+            font-size: 24px;
+            margin: 0 15px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons i:hover {
+            color: #3b7a3f;
+        }
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo-image {
+            position: absolute;
+            top: 10px; /* Adjust to align correctly */
+            left: 50px; /* Adjust horizontal positioning */
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 10; 
+        }
+
+        /* Responsieve ontwerp */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .woonwinkel-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .woonwinkel-image {
+                max-width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Images/logo.jpg" class="logo-image">
+    <header>
+        Belle Interieur
+    </header>
+    <div class="contact-top-right">
+        <p>Erasmuspad 10</p>
+        <p>1052KP Rotterdam</p>
+        <p>010 285 55 55</p>
+        <p>649414@hmcollege.nl</p>
+        <p>KvK nr.: 33695059</p>
+        <p>BTW nr.: NL001234567B01</p>
+    </div>
+    <nav>
+        <a href="ProductList.html">Terug naar Producten</a>
+    </nav>
+
+    <div class="container">
+        <div class="info-box">
+            <h3>Overige ontwerpen</h3>
+            <ul>
+                <li><strong>Neri Oxman:</strong> Neri Oxman is een ontwerpster die zich bezig houdt met materialen, biologie en futuristische ontwerpen. Haar ontwerpen zijn organisch en gemaakt van afwisselende materialen. Zo ook de Gemini Fauteuil: een fauteuil met een buitenkant van 3D print en een binnenkant met textiel bekleed. Het materiaal dempt het geluid, ook al is dat niet heel functioneel voor een stoel. Het doel van Neri was om niet alleen een functionele stoel te maken, maar ook ervoor zorgen dat het een spirituele aandacht trekt.</li>
+                
+                <li><strong>Fernando Laposse:</strong> Fernando Laposse is een Mexicaanse ontwerper met een graad in productontwerp van Central St. Martins. Zijn praktijk is materiaal-gedreven en richt zich op het transformeren van bescheiden natuurlijke vezels zoals maïsschillen, sisal of loofah in designstukken en nieuwe architecturale materialen. Hij maakt vloerbedekking van maïs, genaamd totmoxtle. Het is duurzaam omdat de productie geen chemische processen bevat en het biologisch afbreekbaar is.</li>
+                
+                <li><strong>Occony:</strong> Een merk dat hand in hand gaat met duurzaamheid. Deze barkruk is gemaakt van beukenhout, met vulling van kokshaar en een afwerking van lamswol. Het ontwerp is bekroond met de ARC21 award. Het doel is om zo duurzaam mogelijk te produceren en klimaatverandering tegen te gaan, met de naam 'Peak' die verwijst naar de kale bergtoppen door klimaatverandering.</li>
+                
+                <li><strong>Planq NL:</strong> Planq NL richt zich op duurzame alternatieven voor materialen. Het bedrijf maakt gebruik van gerecycled denim, hennep- en vlasvezels om sterke en duurzame materialen te creëren. Dit bespaart water in vergelijking met de productie van traditionele stoffen zoals spijkerstof.</li>
+                
+                <li><strong>The Good Plastic Company:</strong> Werkt samen met merken zoals McDonald’s, Adidas, Mercedes-Benz en BMW door plastic te recyclen en om te zetten in panelen. Deze bedrijven hebben producten gemaakt van gerecycled plastic, zoals vloeren en panelen. Dit draagt bij aan het verminderen van plasticafval.</li>
+                
+                <li><strong>Piet Hein Eek:</strong> Produceert producten van sloophout en heeft exclusieve ontwerpen onder vakmanschap. Zijn samenwerking met IKEA en LEFF Amsterdam heeft geleid tot duurzame kasten en klokken. Hij maakt ook kasten van gerecycled staal en gemengde metalen.</li>
+                
+                <li><strong>Kurkvloeren Wicanders:</strong> Vloeren gemaakt van kurk afkomstig van de schors van de kurkeik. Kurk is thermisch isolerend en veerkrachtig, wat het een duurzame en geluiddempende vloeroptie maakt. Het kan echter niet worden gebruikt in vochtige omgevingen, zoals een badkamer.</li>
+                
+                <li><strong>Bamboe meubels: bloooms:</strong> Bamboe groeit snel en is een sterk materiaal, ideaal voor meubels die lang meegaan. Het is lichtgewicht en kan hol worden gemaakt om materiaal te besparen en zo meer meubels te produceren.</li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="contact-info">
+            <p>Isabelle | +31 6 25444782 | 649414@hmcollege.nl</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/HMCmbovakschool/?locale=nl_NL" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/isabelle._.w?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/HMCmbovakschool" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Duurzame Interieurs</p>
+    </footer>
+</body>
+</html>

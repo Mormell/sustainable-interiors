@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contact - Sustainable Interiors</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/woonwinkel.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header-stijlen */
+        header {
+            background-color: rgba(178, 172, 136, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Tab stijlen */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(178, 172, 136, 0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #3b7a3f;
+            border-radius: 5px;
+        }
+
+        /* Contact informatie */
+        .contact-top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.6); 
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            width: 500px; 
+            margin: 50px auto;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            width: 100%; /* Ensure it takes full width */
+            box-sizing: border-box; /* To account for padding/margin */
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.333% - 20px); /* This ensures three cards in a row */
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            box-sizing: border-box; /* To avoid overflow issues */
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-link {
+            color: #4a4a4a;
+            text-decoration: none;
+            display: block;
+        }
+
+        .product-link h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-link p {
+            font-size: 16px;
+            color: #7a7a7a;
+        }
+
+        /* Footer stijlen */
+        footer {
+            background-color: rgba(178, 172, 136, 0.8);
+            color: white;
+            padding: 20px 20px 10px 20px;
+            text-align: center;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        footer .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        footer .social-icons i {
+            font-size: 24px;
+            margin: 0 15px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons i:hover {
+            color: #3b7a3f;
+        }
+        .logo-image {
+            position: absolute;
+            top: 10px; /* Adjust to align correctly */
+            left: 50px; /* Adjust horizontal positioning */
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 10; 
+        }
+
+        /* Linkjes */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="Images/logo.jpg" class="logo-image">
+    <header>
+        Belle Interieur
+    </header>
+    <div class="contact-top-right">
+        <p>Erasmuspad 10</p>
+        <p>1052KP Rotterdam</p>
+        <p>010 285 55 55</p>
+        <p>649414@hmcollege.nl</p>
+        <p>KvK nr.: 33695059</p>
+        <p>BTW nr.: NL001234567B01</p>
+    </div>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="ProductList.html">Producten</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Questions.html">Vragen</a>
+    </nav>
+
+    <div class="container">
+        <h1>Merken Onderzoek</h1>
+        <p>In de woonwinkel wil ik een duurzame collectie kwijt. Deze collectie bestaat uit verschillende merken, leveranciers en ontwerpers. Voor deze collectie ga ik op zoek naar de mooiste, duurzaamste en origineelste producten. Ik denk hierbij aan gerecycled hout, composieten, originele vormen, rest- afval/producten en alles wat daar op lijkt. Zolang het maar duurzame kenmerken heeft. Via een lijst van merken en producten kies ik de mooiste en meest originele uit.</p>
+
+        <!-- Product List Section -->
+        <div class="product-list" id="productList">
+            <!-- Product cards as clickable boxes -->
+            <div class="product-card">
+                <a href="Zeefier.html" class="product-link">
+                    <h3>Zeefier</h3>
+                    <p>Verf op basis van zeewier</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="Satellite.html" class="product-link">
+                    <h3>Satellite</h3>
+                    <p>Lampenkappen van gerecyclede cd’s</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="Organoid.html" class="product-link">
+                    <h3>Organoid</h3>
+                    <p>Natuurgebaseerde wandbekleding</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="KoperOven.html" class="product-link">
+                    <h3>Koper Oven</h3>
+                    <p>Blok ‘classic’ pizza oven</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="Bamboe.html" class="product-link">
+                    <h3>Bamboo Divider</h3>
+                    <p>Bamboe scherm, perfect voor privacy en decoratie"</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="Other.html" class="product-link">
+                    <h3>Other</h3>
+                    <p>Overige ontwerpen</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <p>Isabelle | +31 6 25444782 | 649414@hmcollege.nl</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/HMCmbovakschool/?locale=nl_NL" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/isabelle._.w?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/HMCmbovakschool" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Duurzame Interieurs</p>
+    </footer>
+
+</body>
+</html>
